@@ -1,0 +1,57 @@
+name: DuoLA PR Verified
+description: Independently verifies Base and Head behavior on the customer's GitHub Runner.
+author: DuoLA
+inputs:
+  phase:
+    description: verify (recommended), plan, execute, or publish
+    required: true
+  control-plane:
+    description: DuoLA Control Plane URL
+    required: false
+    default: https://api.duola.manyaitool.com
+  model-mode:
+    description: auto, duola, or customer
+    required: false
+    default: auto
+  base-sha:
+    description: Exact Base commit SHA
+    required: true
+  head-sha:
+    description: Exact Head or Merge Group commit SHA
+    required: true
+  pull-request-title:
+    description: Pull request title
+    required: false
+    default: ""
+  pull-request-body:
+    description: Pull request body
+    required: false
+    default: ""
+  docker-image:
+    description: Optional organization-approved DuoLA runner image
+    required: false
+  dependency-cache:
+    description: Optional host path for the isolated dependency and build cache
+    required: false
+  existing-ci-passed:
+    description: Whether existing CI passed before DuoLA
+    required: false
+    default: "false"
+  plan-result:
+    description: Result of the plan job, used by the always-running publish phase
+    required: false
+    default: success
+  context-result:
+    description: Result of the context job, used by the always-running publish phase
+    required: false
+    default: success
+  execute-result:
+    description: Result of the execute job, used by the always-running publish phase
+    required: false
+    default: success
+runs:
+  using: node24
+  main: packages/action/dist/index.js
+branding:
+  icon: check-circle
+  color: purple
