@@ -1,8 +1,8 @@
-# DuoLA PR Verified Action
+# DuoAttest AI Action
 
 This is the public, immutable GitHub Action distribution for
-[DuoLA PR Verified](https://duola.manyaitool.com).
+[DuoAttest AI](https://duola.manyaitool.com).
 
 Do not reference a branch. DuoLA installation pull requests pin this Action to a full commit SHA.
 
-Source release: `0db1870ce37188aa4f8ab782c2912bcd11ccd297`
+Source release: `c7583ff70cf00e8c5f9db58e17a17adb00d62195`

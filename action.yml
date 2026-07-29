@@ -1,5 +1,5 @@
-name: DuoLA PR Verified
-description: Independently verifies Base and Head behavior on the customer's GitHub Runner.
+name: DuoAttest PR Verification
+description: DuoAttest AI independently verifies Base and Head behavior on the customer's GitHub Runner.
 author: DuoLA
 inputs:
   phase:
