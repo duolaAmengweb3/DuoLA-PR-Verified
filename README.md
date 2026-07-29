@@ -5,4 +5,4 @@ This is the public, immutable GitHub Action distribution for
 
 Do not reference a branch. DuoLA installation pull requests pin this Action to a full commit SHA.
 
-Source release: `c8f4cca43088176bc06957352cd7dbe9d2348567`
+Source release: `2de50074037192914b4ea95ae94f847ea8c80904`
